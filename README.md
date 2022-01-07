@@ -3,6 +3,8 @@ A hack&amp;roll 2022 project (Telegram Bot) to help solve Singaporean's decision
 
 Built with Python.
 
+Library used:[pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)
+
 ## Instructions on running
 CD into working directory
 
