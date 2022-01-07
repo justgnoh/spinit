@@ -3,7 +3,7 @@ from telebot.types import InlineKeyboardMarkup, InlineKeyboardButton
 from random import seed
 from random import randint
 
-bot = telebot.TeleBot("INSERT TOKEN HERE", parse_mode=None) 
+bot = telebot.TeleBot("TOKEN", parse_mode=None) 
 # You can set parse_mode by default. HTML or MARKDOWN
 
 seed(1)
@@ -129,9 +129,14 @@ def start_handler(message):
     bot.send_message(message.chat.id, "Please select a category you would like a recco for! 😀" , reply_markup=gen_markup())
 
 @bot.message_handler(commands=['help'])
-def start_handler(message):
+def help_handler(message):
     help_message = "❓ Try typing /spin to begin! ❓"
     bot.send_message(message.chat.id, help_message)
+
+@bot.message_handler(commands=['suggest'])
+def suggest_handler(message):
+    suggest_message = "<b>" + "[This feature is a WORK-IN-PROGRESS]" + "</b>" + "\n\n" + "Users will be able to fill up a form facilitated by the bot to suggest a spot to the existing repository." + "\n\n" + "Thank you for your contribution! The team will review your submission and be in contact with you soon!"
+    bot.send_message(message.chat.id, suggest_message, parse_mode="HTML")
 
 @bot.callback_query_handler(func=lambda call: True)
 def callback_query(call):
