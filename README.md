@@ -1,5 +1,7 @@
 # spinit
-A hack&amp;roll 2022 project to help solve Singaporean's decision-making woes. It also hopes to serve as an online repository of #supportlocalsg
+A hack&amp;roll 2022 project (Telegram Bot) to help solve Singaporean's decision-making woes. It also hopes to serve as an online repository of #supportlocalsg
+
+Built with Python.
 
 ## Instructions on running
 CD into working directory
