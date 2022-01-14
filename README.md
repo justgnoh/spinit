@@ -4,6 +4,9 @@ A hack&amp;roll 2022 project (Telegram Bot) to help solve Singaporean's decision
 Built with Python.
 
 Library used:[ pyTelegramBotAPI](https://github.com/eternnoir/pyTelegramBotAPI)
+
+DevPost: [link](https://devpost.com/software/spinit-singapore)
+
 ## Instructions on running
 CD into working directory
 
